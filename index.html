@@ -8,7 +8,28 @@
 </head>
 <body>
     <!-- Header -->
-    <header></header>
+    <header>
+        <nav class="white">
+            <div class="container">
+                <a href=""><img class="responsive-img" width="150px" src="img/logo.png" alt=""></a>
+                <a href="#mobile" class="sidenav-trigger right orange-text">s</a>
+                <ul class="right hide-on-small-only">
+                    <li><a class="orange-text" href=""><strong>Home</strong></a></li>
+                    <li><a class="orange-text" href=""><strong>Cakes</strong></a></li>
+                    <li><a class="orange-text" href=""><strong>Soups</strong></a></li>
+                    <li><a class="orange-text" href=""><strong>Chicken</strong></a></li>
+                    <li><a class="orange-text" href=""><strong>Customers</strong></a></li>
+                </ul>
+                <ul id="mobile" class="orange darken-4 sidenav">
+                    <li><a class="white-text" href=""><strong>Home</strong></a></li>
+                    <li><a class="white-text" href=""><strong>Cakes</strong></a></li>
+                    <li><a class="white-text" href=""><strong>Soups</strong></a></li>
+                    <li><a class="white-text" href=""><strong>Chicken</strong></a></li>
+                    <li><a class="white-text" href=""><strong>Customers</strong></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <main>
         <!-- Home -->
         <!-- Customers comments -->
@@ -23,8 +44,8 @@
 <script src="js/jquery.js"></script>
 <script src="js/materialize.js"></script>
 <script>
-    $('.document').read(function(){
-
+    $(document).ready(function(){
+        $('.sidenav').sidenav()
     })
 </script>
 </html>
