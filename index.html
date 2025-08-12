@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe.com</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/materialize.css">
     <style>
         .slider .indicators .indicator-item.active {background-color: #e65100;
@@ -45,9 +46,68 @@
     </header>
     <main>
         <!-- Home -->
+        <section>
+            <div class="container">
+                <h3 class="orange-text text-darken-3">Hello there, foodies!</h3>
+                <p>You smart, you loyal, you a genius. You see the hedges, how Igot it shaped up? It's important to shape up your hedges. It's like getting a haircut, stay fresh. I'm giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. In life there will be roadblocks, but we will overcome it. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key.</p>
+                <hr>
+            
+                <div class="row">
+                    <div class="col s12 l4">
+                        <ul class="collapsible">
+                            <li>
+                                <div class="collapsible-header white-text orange darken-3 ">
+                                    <i class="material-icons">label</i>
+                                    <strong>CAKES!</strong>
+                                </div>
+                                <div class="collapsible-body">
+                                    <img class="responsive-img" src="img/sponge_cake.webp" alt="">
+                                    <P>i'm giving you cloth talk,cloth.Special cloth alert,cut from a special cloth.it's on how you want to leave your life</P>
+                                    <a class="btn-small orange darken-3" href=""><strong>ALL CAKE RECIPES</strong></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col s12 l4">
+                        <ul class="collapsible">
+                            <li>
+                                <div class="collapsible-header white-text orange darken-3 ">
+                                    <i class="material-icons">label</i>
+                                    <strong>SOUPS</strong>
+                                </div>
+                                <div class="collapsible-body">
+                                    <img class="responsive-img" src="img/mexican_soup.webp" alt="">
+                                    <p>The key sucess is to keep your head above the water, never give up. The key is to drink fresh coconut water. Seciail cloth talk</p>                                    
+                                    <a class="btn-small orange darken-3" href=""><strong>ALL SOUP RECIPES</strong></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col s12 l4">
+                        <ul class="collapsible">
+                            <li>
+                                <div class="collapsible-header white-text orange darken-3 ">
+                                    <i class="material-icons">labels</i>
+                                    <strong>CHICKEN</strong>
+                                </div>
+                                <div class="collapsible-body">
+                                    <img class="responsive-img" src="img/chicken_8.webp" alt="">
+                                    <p>A major key,never panic. Don't panic when it gets crazy and rough, don't panic, stay calm. The key to some fresh milk<p>                                    
+                                    <a class="btn-small orange darken-3" href=""><strong>ALL CHICKEN RECIPES</strong></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </section>
         <!-- Customers comments -->
+        <section>
+        </section>
         <!-- Cakes -->
+        <section></section>
         <!-- Soups -->
+        <section></section>
         <!-- Chicken -->
     </main>
     <footer>
@@ -62,6 +122,7 @@
         $('.slider').slider ({
             height: 500
         })
+        $('.collapsible').collapsible()
     })
 </script>
 </html>
