@@ -29,6 +29,15 @@
                 </ul>
             </div>
         </nav>
+        <div class="slider">
+            <ul class="slides">
+                <li><img class="responsive-img" src="img/cake_fruit.jpg" alt=""></li>
+                <li><img class="responsive-img" src="img/shrimp_soup.jpg" alt=""></li>
+                <li><img class="responsive-img" src="img/chicken_3.jpg" alt=""></li>
+                <li><img class="responsive-img" src="img/dessert_chocolate.jpg" alt=""></li>
+                <li><img class="responsive-img" src="img/ginger_cake.webp" alt=""></li>
+            </ul>
+        </div>
     </header>
     <main>
         <!-- Home -->
@@ -45,7 +54,10 @@
 <script src="js/materialize.js"></script>
 <script>
     $(document).ready(function(){
-        $('.sidenav').sidenav()
+        $('.sidenav').sidenav();
+        $('.slider').slider ({
+            height: 500
+        })
     })
 </script>
 </html>
