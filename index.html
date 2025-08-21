@@ -144,15 +144,14 @@
 
         <!-- Cakes -->
         <section id="Cakes">
-            <img class="responsive-img" src="img/cake.jpg" alt="">
+            <div class="parallax-container">
+                <div class="parallax">
+                    <img class="responsive-img" src="img/cake.jpg" alt="">
+                </div>
+            </div>
             <div class="container">
                 <h3 class="orange-text text-darken-3">Cakes</h3>
                 <h6>The other day the grass was brown, now it's green because I ain't give up. Never surrender. The key is to enjoy life, because they don't want you to enjoy life. I promise you, they don't want you to jetski, they don't want you to smile. Congratulations, you played yourself.</h6>
-                <div class="modal">
-
-                </div>
-                <h5>Ingredients</h5>
-
 
                 <div class="row">
                     <div class="col s2 m4">
@@ -309,7 +308,11 @@
 
         <!-- Soups -->
         <section id="Soups">
-            <img class="responsive-img" src="img/soup.jpg" alt="">
+            <div class="parallax-container">
+                <div class="parallax">
+                    <img class="responsive-img" src="img/soup.jpg" alt="">
+                </div>
+            </div>
             <div class="container">
                 <h3 class="orange-text text-darken-3">Soups</h3>
                 <h6>When you believe, you will succeed. The first of the month is coming, we have to get money we have no choice. It cost money to eat and they don't want you to eat. Surround yourself with angels, positive energy, beautiful people, beautiful souls, and a clean heart.</h6>
@@ -470,7 +473,11 @@
 
         <!-- Chicken -->
         <section id="Chicken">
-            <img class="responsive-img" src="img/chicken.jpg" alt="">
+            <div class="parallax-container">
+                <div class="parallax">
+                    <img class="responsive-img" src="img/chicken.jpg" alt="">
+                </div>
+            </div>
             <div class="container">
                 <h3 class="orange-text text-darken-3">Chicken</h3>
                 <h6>The key to more success is to have a lot of pillows. We the best. The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key. I'm giving you cloth talk, cloth. Special cloth alert, cut from a special cloth.</h6>
@@ -663,8 +670,9 @@
         $('.sidenav').sidenav();
         $('.slider').slider ({
             height: 500
-        })
-        $('.collapsible').collapsible()
+        });
+        $('.collapsible').collapsible();
+        $('.parallax').parallax();
     })
 </script>
 </html>
