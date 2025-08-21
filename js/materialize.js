@@ -813,10 +813,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     },
 
     insertBefore: function (selector) {
-      var _this2 = this;
+      var _this12 = this;
       cash(selector).each(function (el, i) {
         var parent = el.parentNode;
-        _this2.each(function (v) {
+        _this12.each(function (v) {
           parent.insertBefore(i === 0 ? v : v.cloneNode(true), el);
         });
       });
@@ -3721,7 +3721,7 @@ $jscomp.polyfill = function (e, r, p, m) {
     }, {
       key: "close",
       value: function close() {
-        var _this20 = this;
+        var _this120 = this;
 
         this._updateVars();
         this.doneAnimating = false;
@@ -3749,8 +3749,8 @@ $jscomp.polyfill = function (e, r, p, m) {
           duration: this.options.outDuration,
           easing: 'easeOutQuad',
           complete: function () {
-            _this20.overlayActive = false;
-            _this20.$overlay.remove();
+            _this120.overlayActive = false;
+            _this120.$overlay.remove();
           }
         });
 
@@ -3764,7 +3764,7 @@ $jscomp.polyfill = function (e, r, p, m) {
             duration: this.options.outDuration,
             easing: 'easeOutQuad',
             complete: function () {
-              _this20.$photoCaption.remove();
+              _this120.$photoCaption.remove();
             }
           });
         }
@@ -3814,30 +3814,30 @@ $jscomp.polyfill = function (e, r, p, m) {
     function Parallax(el, options) {
       _classCallCheck(this, Parallax);
 
-      var _this21 = _possibleConstructorReturn(this, (Parallax.__proto__ || Object.getPrototypeOf(Parallax)).call(this, Parallax, el, options));
+      var _this121 = _possibleConstructorReturn(this, (Parallax.__proto__ || Object.getPrototypeOf(Parallax)).call(this, Parallax, el, options));
 
-      _this21.el.M_Parallax = _this21;
+      _this121.el.M_Parallax = _this121;
 
       /**
        * Options for the Parallax
        * @member Parallax#options
        * @prop {Number} responsiveThreshold
        */
-      _this21.options = $.extend({}, Parallax.defaults, options);
-      _this21._enabled = window.innerWidth > _this21.options.responsiveThreshold;
+      _this121.options = $.extend({}, Parallax.defaults, options);
+      _this121._enabled = window.innerWidth > _this121.options.responsiveThreshold;
 
-      _this21.$img = _this21.$el.find('img').first();
-      _this21.$img.each(function () {
+      _this121.$img = _this121.$el.find('img').first();
+      _this121.$img.each(function () {
         var el = this;
         if (el.complete) $(el).trigger('load');
       });
 
-      _this21._updateParallax();
-      _this21._setupEventHandlers();
-      _this21._setupStyles();
+      _this121._updateParallax();
+      _this121._setupEventHandlers();
+      _this121._setupStyles();
 
-      Parallax._parallaxes.push(_this21);
-      return _this21;
+      Parallax._parallaxes.push(_this121);
+      return _this121;
     }
 
     _createClass(Parallax, [{
@@ -3991,9 +3991,9 @@ $jscomp.polyfill = function (e, r, p, m) {
     function Tabs(el, options) {
       _classCallCheck(this, Tabs);
 
-      var _this22 = _possibleConstructorReturn(this, (Tabs.__proto__ || Object.getPrototypeOf(Tabs)).call(this, Tabs, el, options));
+      var _this122 = _possibleConstructorReturn(this, (Tabs.__proto__ || Object.getPrototypeOf(Tabs)).call(this, Tabs, el, options));
 
-      _this22.el.M_Tabs = _this22;
+      _this122.el.M_Tabs = _this122;
 
       /**
        * Options for the Tabs
@@ -4003,26 +4003,26 @@ $jscomp.polyfill = function (e, r, p, m) {
        * @prop {Boolean} swipeable
        * @prop {Number} responsiveThreshold
        */
-      _this22.options = $.extend({}, Tabs.defaults, options);
+      _this122.options = $.extend({}, Tabs.defaults, options);
 
       // Setup
-      _this22.$tabLinks = _this22.$el.children('li.tab').children('a');
-      _this22.index = 0;
-      _this22._setupActiveTabLink();
+      _this122.$tabLinks = _this122.$el.children('li.tab').children('a');
+      _this122.index = 0;
+      _this122._setupActiveTabLink();
 
       // Setup tabs content
-      if (_this22.options.swipeable) {
-        _this22._setupSwipeableTabs();
+      if (_this122.options.swipeable) {
+        _this122._setupSwipeableTabs();
       } else {
-        _this22._setupNormalTabs();
+        _this122._setupNormalTabs();
       }
 
       // Setup tabs indicator after content to ensure accurate widths
-      _this22._setTabsAndTabWidth();
-      _this22._createIndicator();
+      _this122._setTabsAndTabWidth();
+      _this122._createIndicator();
 
-      _this22._setupEventHandlers();
-      return _this22;
+      _this122._setupEventHandlers();
+      return _this122;
     }
 
     _createClass(Tabs, [{
@@ -4093,7 +4093,7 @@ $jscomp.polyfill = function (e, r, p, m) {
     }, {
       key: "_handleTabClick",
       value: function _handleTabClick(e) {
-        var _this23 = this;
+        var _this123 = this;
 
         var tab = $(e.target).closest('li.tab');
         var tabLink = $(e.target).closest('a');
@@ -4131,8 +4131,8 @@ $jscomp.polyfill = function (e, r, p, m) {
         if (this.options.swipeable) {
           if (this._tabsCarousel) {
             this._tabsCarousel.set(this.index, function () {
-              if (typeof _this23.options.onShow === 'function') {
-                _this23.options.onShow.call(_this23, _this23.$content[0]);
+              if (typeof _this123.options.onShow === 'function') {
+                _this123.options.onShow.call(_this123, _this123.$content[0]);
               }
             });
           }
@@ -4168,7 +4168,7 @@ $jscomp.polyfill = function (e, r, p, m) {
     }, {
       key: "_createIndicator",
       value: function _createIndicator() {
-        var _this24 = this;
+        var _this124 = this;
 
         var indicator = document.createElement('li');
         indicator.classList.add('indicator');
@@ -4177,8 +4177,8 @@ $jscomp.polyfill = function (e, r, p, m) {
         this._indicator = indicator;
 
         setTimeout(function () {
-          _this24._indicator.style.left = _this24._calcLeftPos(_this24.$activeTabLink) + 'px';
-          _this24._indicator.style.right = _this24._calcRightPos(_this24.$activeTabLink) + 'px';
+          _this124._indicator.style.left = _this124._calcLeftPos(_this124.$activeTabLink) + 'px';
+          _this124._indicator.style.right = _this124._calcRightPos(_this124.$activeTabLink) + 'px';
         }, 0);
       }
 
@@ -4218,7 +4218,7 @@ $jscomp.polyfill = function (e, r, p, m) {
     }, {
       key: "_setupSwipeableTabs",
       value: function _setupSwipeableTabs() {
-        var _this25 = this;
+        var _this125 = this;
 
         // Change swipeable according to responsive threshold
         if (window.innerWidth > this.options.responsiveThreshold) {
@@ -4244,14 +4244,14 @@ $jscomp.polyfill = function (e, r, p, m) {
           fullWidth: true,
           noWrap: true,
           onCycleTo: function (item) {
-            var prevIndex = _this25.index;
-            _this25.index = $(item).index();
-            _this25.$activeTabLink.removeClass('active');
-            _this25.$activeTabLink = _this25.$tabLinks.eq(_this25.index);
-            _this25.$activeTabLink.addClass('active');
-            _this25._animateIndicator(prevIndex);
-            if (typeof _this25.options.onShow === 'function') {
-              _this25.options.onShow.call(_this25, _this25.$content[0]);
+            var prevIndex = _this125.index;
+            _this125.index = $(item).index();
+            _this125.$activeTabLink.removeClass('active');
+            _this125.$activeTabLink = _this125.$tabLinks.eq(_this125.index);
+            _this125.$activeTabLink.addClass('active');
+            _this125._animateIndicator(prevIndex);
+            if (typeof _this125.options.onShow === 'function') {
+              _this125.options.onShow.call(_this125, _this125.$content[0]);
             }
           }
         });
@@ -4461,17 +4461,17 @@ $jscomp.polyfill = function (e, r, p, m) {
     function Tooltip(el, options) {
       _classCallCheck(this, Tooltip);
 
-      var _this26 = _possibleConstructorReturn(this, (Tooltip.__proto__ || Object.getPrototypeOf(Tooltip)).call(this, Tooltip, el, options));
+      var _this126 = _possibleConstructorReturn(this, (Tooltip.__proto__ || Object.getPrototypeOf(Tooltip)).call(this, Tooltip, el, options));
 
-      _this26.el.M_Tooltip = _this26;
-      _this26.options = $.extend({}, Tooltip.defaults, options);
+      _this126.el.M_Tooltip = _this126;
+      _this126.options = $.extend({}, Tooltip.defaults, options);
 
-      _this26.isOpen = false;
-      _this26.isHovered = false;
-      _this26.isFocused = false;
-      _this26._appendTooltipEl();
-      _this26._setupEventHandlers();
-      return _this26;
+      _this126.isOpen = false;
+      _this126.isHovered = false;
+      _this126.isFocused = false;
+      _this126._appendTooltipEl();
+      _this126._setupEventHandlers();
+      return _this126;
     }
 
     _createClass(Tooltip, [{
@@ -4557,16 +4557,16 @@ $jscomp.polyfill = function (e, r, p, m) {
     }, {
       key: "_setExitDelayTimeout",
       value: function _setExitDelayTimeout() {
-        var _this27 = this;
+        var _this127 = this;
 
         clearTimeout(this._exitDelayTimeout);
 
         this._exitDelayTimeout = setTimeout(function () {
-          if (_this27.isHovered || _this27.isFocused) {
+          if (_this127.isHovered || _this127.isFocused) {
             return;
           }
 
-          _this27._animateOut();
+          _this127._animateOut();
         }, this.options.exitDelay);
       }
 
@@ -4577,16 +4577,16 @@ $jscomp.polyfill = function (e, r, p, m) {
     }, {
       key: "_setEnterDelayTimeout",
       value: function _setEnterDelayTimeout(isManual) {
-        var _this28 = this;
+        var _this128 = this;
 
         clearTimeout(this._enterDelayTimeout);
 
         this._enterDelayTimeout = setTimeout(function () {
-          if (!_this28.isHovered && !_this28.isFocused && !isManual) {
+          if (!_this128.isHovered && !_this128.isFocused && !isManual) {
             return;
           }
 
-          _this28._animateIn();
+          _this128._animateIn();
         }, this.options.enterDelay);
       }
     }, {
@@ -5212,18 +5212,18 @@ $jscomp.polyfill = function (e, r, p, m) {
     }, {
       key: "_setTimer",
       value: function _setTimer() {
-        var _this29 = this;
+        var _this129 = this;
 
         if (this.timeRemaining !== Infinity) {
           this.counterInterval = setInterval(function () {
             // If toast is not being dragged, decrease its time remaining
-            if (!_this29.panning) {
-              _this29.timeRemaining -= 20;
+            if (!_this129.panning) {
+              _this129.timeRemaining -= 20;
             }
 
             // Animate toast out
-            if (_this29.timeRemaining <= 0) {
-              _this29.dismiss();
+            if (_this129.timeRemaining <= 0) {
+              _this129.dismiss();
             }
           }, 20);
         }
