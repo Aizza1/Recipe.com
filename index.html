@@ -17,28 +17,30 @@
 <body>
     <!-- Header -->
     <header id="Top">
-        <nav class="white">
-            <div class="container">
-                <a href=""><img class="responsive-img" width="150px" src="img/logo.png" alt=""></a>
-                <a href="#mobile" class="sidenav-trigger right orange-text text-darken-4">
-                    <i class="material-icons">menu</i>
-                </a>
-                <ul class="right hide-on-small-only ">
-                    <li><a class="orange-text text-darken-4" href="index.html"><strong>Home</strong></a></li>
-                    <li><a class="orange-text text-darken-4" href="Cakes.html"><strong>Cakes</strong></a></li>
-                    <li><a class="orange-text text-darken-4" href="Soups.html"><strong>Soups</strong></a></li>
-                    <li><a class="orange-text text-darken-4" href="Chicken.html"><strong>Chicken</strong></a></li>
-                    <li><a class="orange-text text-darken-4" href="index.html#Reviews"><strong>Reviews</strong></a></li>
-                </ul>
-                <ul id="mobile" class="orange darken-4 sidenav">
-                    <li><a class="white-text" href="index.html"><strong>Home</strong></a></li>
-                    <li><a class="white-text" href="Cakes.html"><strong>Cakes</strong></a></li>
-                    <li><a class="white-text" href="Soups.html"><strong>Soups</strong></a></li>
-                    <li><a class="white-text" href="Chicken.html"><strong>Chicken</strong></a></li>
-                    <li><a class="white-text" href="index.html#Reviews"><strong>Reviews</strong></a></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="navbar-fixed">
+            <nav class="white">
+                <div class="container">
+                    <a href=""><img class="responsive-img" width="150px" src="img/logo.png" alt=""></a>
+                    <a href="#mobile" class="sidenav-trigger right orange-text text-darken-4">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-small-only ">
+                        <li><a class="orange-text text-darken-4" href="index.html"><strong>Home</strong></a></li>
+                        <li><a class="orange-text text-darken-4" href="Cakes.html"><strong>Cakes</strong></a></li>
+                        <li><a class="orange-text text-darken-4" href="Soups.html"><strong>Soups</strong></a></li>
+                        <li><a class="orange-text text-darken-4" href="Chicken.html"><strong>Chicken</strong></a></li>
+                        <li><a class="orange-text text-darken-4" href="index.html#Reviews"><strong>Reviews</strong></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <ul id="mobile" class="orange darken-4 sidenav">
+            <li><a class="white-text" href="index.html"><strong>Home</strong></a></li>
+            <li><a class="white-text" href="Cakes.html"><strong>Cakes</strong></a></li>
+            <li><a class="white-text" href="Soups.html"><strong>Soups</strong></a></li>
+            <li><a class="white-text" href="Chicken.html"><strong>Chicken</strong></a></li>
+            <li><a class="white-text" href="index.html#Reviews"><strong>Reviews</strong></a></li>
+        </ul>
         <div class="slider">
             <ul class="slides">
                 <li><img class="responsive-img" src="img/shrimp_soup.jpg" alt=""></li>
@@ -68,7 +70,7 @@
                                 <div class="collapsible-body">
                                     <img class="responsive-img" src="img/sponge_cake.webp" alt="">
                                     <P>Indulge in sweet and irresistable cake recipes perfect for every occasion</P>
-                                    <a class="btn-small orange darken-4" href=""><strong>ALL CAKE RECIPES</strong></a>
+                                    <a class="btn btn-flat orange darken-4" href=""><strong>ALL CAKE RECIPES</strong></a>
                                 </div>
                             </li>
                         </ul>
@@ -83,7 +85,7 @@
                                 <div class="collapsible-body">
                                     <img class="responsive-img" src="img/mexican_soup.webp" alt="">
                                     <p>Cozy up with our comforting soup recipes that warm the heart and soul</p>                                    
-                                    <a class="btn-small orange darken-4" href=""><strong>ALL SOUP RECIPES</strong></a>
+                                    <a class="btn btn-flat orange darken-4" href=""><strong>ALL SOUP RECIPES</strong></a>
                                 </div>
                             </li>
                         </ul>
@@ -98,7 +100,7 @@
                                 <div class="collapsible-body">
                                     <img class="responsive-img" src="img/chicken_8.webp" alt="">
                                     <p>From crispy to juicy, our chicken recipes bring bold flavours straight to your table<p>                                    
-                                    <a class="btn-small orange darken-4" href=""><strong>ALL CHICKEN RECIPES</strong></a>
+                                    <a class="btn btn-flat orange darken-4" href=""><strong>ALL CHICKEN RECIPES</strong></a>
                                 </div>
                             </li>
                         </ul>
@@ -185,7 +187,6 @@
                                 <h5 class="orange-text text-darken-4"><strong>Sponge Cake</strong></h5>
                                 <p>A light fluffy classic fluffy perfect for any occasion.</p>
                             </div>
-                            <hr>
                             <div class="card-action">
                                 <a class="orange-text text-darken-4 modal-trigger" href="#sponge">INGREDIENTS</a>
                                 <a class="orange-text text-darken-4" href="">BAKE NOW</a>
@@ -195,13 +196,13 @@
                     <div class="modal" id="sponge">
                         <div class="modal-content">
                             <h6 class="orange-text text-darken-4">Ingredients</h6>
-                            <p>
-                                Flour <br>
-                                Sugar <br>
-                                Eggs <br>
-                                Baking Powder <br>
-                                Butter <br>
-                            </p>
+                            <ul>
+                                <li>Flour</li>
+                                <li>Sugar</li>
+                                <li>Eggs</li>
+                                <li>Baking Powder</li>
+                                <li>Butter</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="col s12 m4">
@@ -213,7 +214,6 @@
                                 <h5 class="orange-text text-darken-4"><strong>Velvet Cake</strong></h5>
                                 <p>Rich, moist and elegantly smooth with hint of cocoa.</p>
                             </div>
-                            <hr>
                             <div class="card-action">
                                 <a class="orange-text text-darken-4 modal-trigger" href="#Velvet">INGREDIENTS</a>
                                 <a class="orange-text text-darken-4" href="">BAKE NOW</a>
@@ -223,13 +223,13 @@
                     <div class="modal" id="Velvet">
                         <div class="modal-content">
                             <h6 class="orange-text text-darken-4">Ingredients</h6>
-                            <p> 
-                                Flour <br>
-                                Cocoa Powder <br>
-                                Sugar <br>
-                                Red food colouring <br>
-                                Vegetable oil <br>
-                            </p>
+                            <ul>
+                                <li>Flour</li>
+                                <li>Cocoa Powder</li>
+                                <li>Sugar</li>
+                                <li>Red food colouring</li>
+                                <li>Vegetable oil</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="col s12 m4">
@@ -241,7 +241,6 @@
                                 <h5 class="orange-text text-darken-4"><strong>Courgette Cake</strong></h5>
                                 <p>A moist and wholesome cake with a fresh twist from courgettes.</p>
                             </div>
-                            <hr>
                             <div class="card-action">
                                 <a class="orange-text text-darken-4 modal-trigger" href="#Courgette">INGREDIENTS</a>
                                 <a class="orange-text text-darken-4" href="">BAKE NOW</a>
@@ -251,13 +250,13 @@
                     <div class="modal" id="Courgette">
                         <div class="modal-content">
                             <h6 class="orange-text text-darken-4">Ingredients</h6>
-                            <p> 
-                                Flour <br>
-                                Courgette (Zucchini) <br>
-                                Eggs <br>
-                                Vegetable oil <br>
-                                Sugar <br>
-                            </p>
+                            <ul>
+                                <li>Flour</li>
+                                <li>Courgette (Zucchini) </li>
+                                <li>Eggs</li>
+                                <li>Vegetable oil</li>
+                                <li>Sugar</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -271,8 +270,7 @@
                                 <h5 class="orange-text text-darken-3"><strong>Chocolate Cake</strong></h5>
                                 <p>When you get out the shower, always dry your back.</p>
                             </div>
-                            <hr>
-                            <div class="card-action">
+                                                      <div class="card-action">
                                 <a class="orange-text text-darken-3" href="">INGREDIENTS</a>
                                 <a class="orange-text text-darken-3" href="">BAKE NOW</a>
                             </div>
@@ -287,8 +285,7 @@
                                 <h5 class="orange-text text-darken-3"><strong>Coffeeslab Cake</strong></h5>
                                 <p>To succeed you must believe, Special cloth talk!</p>
                             </div>
-                            <hr>
-                            <div class="card-action">
+                                                      <div class="card-action">
                                 <a class="orange-text text-darken-3" href="">INGREDIENTS</a>
                                 <a class="orange-text text-darken-3" href="">BAKE NOW</a>
                             </div>
@@ -303,8 +300,7 @@
                                 <h5 class="orange-text text-darken-3"><strong>Pistachio Cake</strong></h5>
                                 <p>Never complain, complaining is weak emotion</p>
                             </div>
-                            <hr>
-                            <div class="card-action">
+                                                      <div class="card-action">
                                 <a class="orange-text text-darken-3" href="">INGREDIENTS</a>
                                 <a class="orange-text text-darken-3" href="">BAKE NOW</a>
                             </div>
@@ -321,8 +317,7 @@
                                 <h5 class="orange-text text-darken-3"><strong>Polenta Cake</strong></h5>
                                 <p>Lion! I'm up to something, they don't wantus to eat.</p>
                             </div>
-                            <hr>
-                            <div class="card-action">
+                                                      <div class="card-action">
                                 <a class="orange-text text-darken-3" href="">INGREDIENTS</a>
                                 <a class="orange-text text-darken-3" href="">BAKE NOW</a>
                             </div>
@@ -337,8 +332,7 @@
                                 <h5 class="orange-text text-darken-3"><strong>Buttermilk Cake</strong></h5>
                                 <p>When you get out the shower, always dry your back.</p>
                             </div>
-                            <hr>
-                            <div class="card-action">
+                                                      <div class="card-action">
                                 <a class="orange-text text-darken-3" href="">INGREDIENTS</a>
                                 <a class="orange-text text-darken-3" href="">BAKE NOW</a>
                             </div>
@@ -353,8 +347,7 @@
                                 <h5 class="orange-text text-darken-3"><strong>Peanut Cake</strong></h5>
                                 <p>When you get out the shower, always dry your back.</p>
                             </div>
-                            <hr>
-                            <div class="card-action">
+                                                      <div class="card-action">
                                 <a class="orange-text text-darken-3" href="">INGREDIENTS</a>
                                 <a class="orange-text text-darken-3" href="">BAKE NOW</a>
                             </div>
@@ -390,7 +383,6 @@
                                 <p>Hearty protein packed, and perfect for a filling meal
                                 </p>
                             </div>
-                            <hr>
                             <div class="card-action">
                                 <a class="orange-text text-darken-4 modal-trigger" href="#Lentil">CONTENTS</a>
                                 <a class="orange-text text-darken-4" href="">COOK NOW</a>
@@ -400,13 +392,13 @@
                     <div class="modal" id="Lentil">
                         <div class="modal-content">
                             <h6 class="orange-text text-darken-4">Ingredients</h6>
-                            <p> 
-                                Red lentils <br>
-                                Carrots (Zucchini) <br>
-                                Garlic <br>
-                                Tomatoes <br>
-                                Onions <br>
-                            </p>
+                            <ul>
+                                <li>Red lentils</li>
+                                <li>Carrots (Zucchini)</li>
+                                <li>Garlic</li>
+                                <li>Tomatoes</li>
+                                <li>Onions</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="col s12 m4">
@@ -418,7 +410,6 @@
                                 <h5 class="orange-text text-darken-4"><strong>Olive Soup</strong></h5>
                                 <p>A mediterranean-inspired soup with bold briny flavours.</p>
                             </div>
-                            <hr>
                             <div class="card-action">
                                 <a class="orange-text text-darken-4 modal-trigger" href="#Olive">CONTENTS</a>
                                 <a class="orange-text text-darken-4" href="">COOK NOW</a>
@@ -428,13 +419,13 @@
                     <div class="modal" id="Olive">
                         <div class="modal-content">
                             <h6 class="orange-text text-darken-4">Ingredients</h6>
-                            <p> 
-                                Green Olives <br>
-                                Garlic <br>
-                                Tomatoes <br>
-                                Olive oil <br>
-                                Onion <br>
-                            </p>
+                            <ul>
+                                <li>Green Olives</li>
+                                <li>Garlic</li>
+                                <li>Tomatoes</li>
+                                <li>Olive oil</li>
+                                <li>Onion</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="col s12 m4">
@@ -446,7 +437,6 @@
                                 <h5 class="orange-text text-darken-4"><strong>Miso Soup</strong></h5>
                                 <p>A light japanese classic with savory umami richness.</p>
                             </div>
-                            <hr>
                             <div class="card-action">
                                 <a class="orange-text text-darken-4 modal-trigger" href="#Miso">CONTENTS</a>
                                 <a class="orange-text text-darken-4" href="">COOK NOW</a>
@@ -456,13 +446,13 @@
                     <div class="modal" id="Miso">
                         <div class="modal-content">
                             <h6 class="orange-text text-darken-4">Ingredients</h6>
-                            <p> 
-                                Miso Paste <br>
-                                Dashi Stock <br>
-                                Tofu <br>
-                                Seaweed (wakame) <br>
-                                Spring onion <br>
-                            </p>
+                            <ul>
+                                <li>Miso Paste</li>
+                                <li>Dashi Stock</li>
+                                <li>Tofu</li>
+                                <li>Seaweed (wakame)</li>
+                                <li>Spring onion</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -476,8 +466,7 @@
                                 <h5 class="orange-text text-darken-3"><strong>Chilli Soup</strong></h5>
                                 <p>Elliptical talk. Life is what you make it, so let's make it.</p>
                             </div>
-                            <hr>
-                            <div class="card-action">
+                                                      <div class="card-action">
                                 <a class="orange-text text-darken-3" href="">CONTENTS</a>
                                 <a class="orange-text text-darken-3" href="">COOK NOW</a>
                             </div>
@@ -492,8 +481,7 @@
                                 <h5 class="orange-text text-darken-3"><strong>Pumpkin Soup</strong></h5>
                                 <p>To be successful you've got to work hard to make history.</p>
                             </div>
-                            <hr>
-                            <div class="card-action">
+                                                      <div class="card-action">
                                 <a class="orange-text text-darken-3" href="">CONTENTS</a>
                                 <a class="orange-text text-darken-3" href="">COOK NOW</a>
                             </div>
@@ -508,8 +496,7 @@
                                 <h5 class="orange-text text-darken-3"><strong>Winter Soup</strong></h5>
                                 <p>It's important to use cocoa butter. It's the key to success.</p>
                             </div>
-                            <hr>
-                            <div class="card-action">
+                                                      <div class="card-action">
                                 <a class="orange-text text-darken-3" href="">CONTENTS</a>
                                 <a class="orange-text text-darken-3" href="">COOK NOW</a>
                             </div>
@@ -526,8 +513,7 @@
                                 <h5 class="orange-text text-darken-3"><strong>Tom Soup</strong></h5>
                                 <p>Own a swimming pool? Don't use chlorine, use salt water.</p>
                             </div>
-                            <hr>
-                            <div class="card-action">
+                                                      <div class="card-action">
                                 <a class="orange-text text-darken-3" href="">CONTENTS</a>
                                 <a class="orange-text text-darken-3" href="">COOK NOW</a>
                             </div>
@@ -542,8 +528,7 @@
                                 <h5 class="orange-text text-darken-3"><strong>Moroccan Soup</strong></h5>
                                 <p>If you have trash in your life, take it out, throw it away</p>
                             </div>
-                            <hr>
-                            <div class="card-action">
+                                                      <div class="card-action">
                                 <a class="orange-text text-darken-3" href="">CONTENTS</a>
                                 <a class="orange-text text-darken-3" href="">COOK NOW</a>
                             </div>
@@ -558,8 +543,7 @@
                                 <h5 class="orange-text text-darken-3"><strong>Mexican Soup</strong></h5>
                                 <p>The key to success is to keep your head above the water.</p>
                             </div>
-                            <hr>
-                            <div class="card-action">
+                                                      <div class="card-action">
                                 <a class="orange-text text-darken-3" href="">CONTENTS</a>
                                 <a class="orange-text text-darken-3" href="">COOK NOW</a>
                             </div>
@@ -595,7 +579,6 @@
                                 <h5 class="orange-text text-darken-4"><strong>Oregano Wings</strong></h5>
                                 <p>ICrispy chicken wings infused with fragrant oregano seasoning</p>
                             </div>
-                            <hr>
                             <div class="card-action">
                                 <a class="orange-text text-darken-4 modal-trigger" href="#Oregano">CONTENTS</a>
                                 <a class="orange-text text-darken-4" href="">PREPARE NOW</a>
@@ -605,13 +588,13 @@
                     <div class="modal" id="Oregano">
                         <div class="modal-content">
                             <h6 class="orange-text text-darken-4">Ingredients</h6>
-                            <p> 
-                                Chicken wings <br>
-                                Oregano <br>
-                                Olive oil <br>
-                                Garlic <br>
-                                Lemon Juice <br>
-                            </p>
+                            <ul>
+                                <li>Chicken wings</li>
+                                <li>Oregano</li>
+                                <li>Olive oil</li>
+                                <li>Garlic</li>
+                                <li>Lemon Juice</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="col s12 m4">
@@ -623,8 +606,7 @@
                                 <h5 class="orange-text text-darken-4"><strong>Mashed Wings</strong></h5>
                                 <p>Tender wings coated with a flavourful, mashed style marinade.</p>
                             </div>
-                            <hr>
-                            <div class="card-action">
+                                                      <div class="card-action">
                                 <a class="orange-text text-darken-4 modal-trigger" href="#Mashed">CONTENTS</a>
                                 <a class="orange-text text-darken-4" href="">PREPARE NOW</a>
                             </div>
@@ -633,13 +615,13 @@
                     <div class="modal" id="Mashed">
                         <div class="modal-content">
                             <h6 class="orange-text text-darken-4">Ingredients</h6>
-                            <p> 
-                                Chicken wings <br>
-                                Garlic <br>
-                                Ginger <br>
-                                Soy sauce <br>
-                                Butter <br>
-                            </p>
+                            <ul>
+                                <li>Chicken wings</li>
+                                <li>Garlic</li>
+                                <li>Ginger</li>
+                                <li>Soy sauce</li>
+                                <li>Butter</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="col s12 m4">
@@ -651,8 +633,7 @@
                                 <h5 class="orange-text text-darken-4"><strong>Buttered Wings</strong></h5>
                                 <p>Golden juicy wings, tossed in rich melted butter</p>
                             </div>
-                            <hr>
-                            <div class="card-action">
+                                                      <div class="card-action">
                                 <a class="orange-text text-darken-4 modal-trigger" href="#Buttered">CONTENTS</a>
                                 <a class="orange-text text-darken-4" href="">PREPARE NOW</a>
                             </div>
@@ -661,13 +642,13 @@
                     <div class="modal" id="Buttered">
                         <div class="modal-content">
                             <h6 class="orange-text text-darken-4">Ingredients</h6>
-                            <p> 
-                                Chicken wings <br>
-                                Butter <br>
-                                Garlic  <br>
-                                Black Pepper <br>
-                                Salt <br>
-                            </p>
+                            <ul>
+                                <li>Chicken wings</li>
+                                <li>Butter</li>
+                                <li>Garlic</li>
+                                <li>Black Pepper</li>
+                                <li>Salt</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -684,8 +665,7 @@
                                 <h5 class="orange-text text-darken-3"><strong>Yoghurt Chicken</strong></h5>
                                 <p>Celebrate success right, the only way, apple. Fan luv.</p>
                             </div>
-                            <hr>
-                            <div class="card-action">
+                                                      <div class="card-action">
                                 <a class="orange-text text-darken-3" href="">CONTENTS</a>
                                 <a class="orange-text text-darken-3" href="">PREPARE NOW</a>
                             </div>
@@ -700,8 +680,7 @@
                                 <h5 class="orange-text text-darken-3"><strong>Chicken Tikka</strong></h5>
                                 <p>Remember in the jungle there's a lot of they in there.</p>
                             </div>
-                            <hr>
-                            <div class="card-action">
+                                                      <div class="card-action">
                                 <a class="orange-text text-darken-3" href="">CONTENTS</a>
                                 <a class="orange-text text-darken-3" href="">PREPARE NOW</a>
                             </div>
@@ -716,8 +695,7 @@
                                 <h5 class="orange-text text-darken-3"><strong>Chicken Couscous</strong></h5>
                                 <p>I pick my choice, squeaky clean. Stay focused</p>
                             </div>
-                            <hr>
-                            <div class="card-action">
+                                                      <div class="card-action">
                                 <a class="orange-text text-darken-3" href="">CONTENTS</a>
                                 <a class="orange-text text-darken-3" href="">PREPARE NOW</a>
                             </div>
@@ -734,8 +712,7 @@
                                 <h5 class="orange-text text-darken-3"><strong>Caramel Chicken</strong></h5>
                                 <p>It's the ones closest to you that want to see you fail.</p>
                             </div>
-                            <hr>
-                            <div class="card-action">
+                                                      <div class="card-action">
                                 <a class="orange-text text-darken-3" href="">CONTENTS</a>
                                 <a class="orange-text text-darken-3" href="">PREPARE NOW</a>
                             </div>
@@ -750,8 +727,7 @@
                                 <h5 class="orange-text text-darken-3"><strong>Chicken Ramen</strong></h5>
                                 <p>They will try to close the door on you, just open it.</p>
                             </div>
-                            <hr>
-                            <div class="card-action">
+                                                      <div class="card-action">
                                 <a class="orange-text text-darken-3" href="">CONTENTS</a>
                                 <a class="orange-text text-darken-3" href="">PREPARE NOW</a>
                             </div>
@@ -766,8 +742,7 @@
                                 <h5 class="orange-text text-darken-3"><strong>Chicken Saag</strong></h5>
                                 <p>you do know that they don't want you to have lunch.</p>
                             </div>
-                            <hr>
-                            <div class="card-action">
+                                                      <div class="card-action">
                                 <a class="orange-text text-darken-3" href="">CONTENTS</a>
                                 <a class="orange-text text-darken-3" href="">PREPARE NOW</a>
                             </div>
@@ -776,22 +751,30 @@
                 </div> -->
             </div>
         </section>
-        <section id="remarks" class="grey lighten-3">
-            <div class="container">
+        <section id="remarks" class="section grey lighten-3">
+            <div class="container section">
                 <div class="row">
                     <div class="col s12 l6">
                         <h4 class="orange-text text-darken-4">Contact Us Today!</h4>
                         <p class="black-text">Do you want to submit a new recipe? Send a message to get started</p>
-                        <a href="" class="btn-small orange darken-4 white-text">CALL US NOW</a>
+                        <a href="" class="btn-small btn-flat orange darken-4 white-text">CALL US NOW <i class="material-icons">call</i> </a>
                     </div>
                     <div class="col s12 l6">
-                        <input type="text" placeholder="Your name">
-                        <label for="name"></label>
-                        <input type="text" placeholder="Enter your Email">
-                        <label for="Email"></label>
-                        <input type="text" placeholder="Your message">
-                        <label for="message"></label>
-                        <a class="btn-large orange darken-4 white-text">SUBMIT</a>
+                        <div class="input-field">
+                            <label for="name">Your name</label>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="input-field">
+                            <label for="Email">Enter your Email</label>
+                            <input type="text" id="email">
+                        </div>
+                        <div class="input-field">
+                            <label for="message">Your message</label>
+                            <input type="text" id="message">
+                        </div>
+                        <div class="input-field">
+                            <input type="submit" class="btn-large orange darken-4 white-text">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -802,7 +785,7 @@
             <div class="row">
                 <div class="col s12 m4 l4">
                     <a href=""><img class="responsive-img" width="150px" src="img/logo.png" alt="logo"></a>
-                    <p>Your one stop shop for all cake, soup <br> and chicken recipes. Make <br> something good today</p>
+                    <p>Your one stop shop for all cake, soup and chicken recipes. Make something good today</p>
                 </div>
                 <div class="col s12 m6 l4"></div>
                 <div class="col s12 m4 l4">
@@ -820,7 +803,7 @@
 
         <div class="footer-copyright orange darken-4">
             <div class="container">
-                <p class="center-align"><strong>&copy; 2025 Recipe.com | CORE-TECH</strong></p>
+                <p class="center-align"><strong>&copy; 2025 Recipe.com | AIZZA DAPS</strong></p>
             </div>
         </div>
     </footer>    
