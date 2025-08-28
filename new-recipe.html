@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new-recipe</title>
+    <link rel="stylesheet" href="css/materialize.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+        html{font-family: "Josefin Sans", sans-serif;}
+        .slider .indicators .indicator-item.active {background-color: #e65100;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav class="white">
+                <div class="container">
+                    <a href=""><img class="responsive-img" width="150px" src="img/logo.png" alt=""></a>
+                    <a href="#mobile" class="sidenav-trigger right orange-text text-darken-4">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-small-only ">
+                        <li><a class="orange-text text-darken-4" href=""><strong>Who We Are</strong></a></li>
+                        <li><a class="orange-text text-darken-4" href=""><strong>Find a Recipe</strong></a></li>
+                        <li><a class="orange-text text-darken-4" href=""><strong>Meet the Experts</strong></a></li>
+                        <li><a class="orange-text text-darken-4" href=""><strong>Clients</strong></a></li>
+                        <!-- <li><a class="orange-text text-darken-4" href="index.html#Reviews"><strong>Reviews</strong></a></li> -->
+                        <li><a class="btn orange darken-4 white-text" href="">LOGIN</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <ul id="mobile" class="orange darken-4 sidenav">
+            <li><a class="white-text" href=""><strong>Who We Are</strong></a></li>
+            <li><a class="white-text" href=""><strong>Find a Recipe</strong></a></li>
+            <li><a class="white-text" href=""><strong>Meet the Experts</strong></a></li>
+            <li><a class="white-text" href=""><strong>
+                        <li><a class="orange-text text-darken-4" href="Chicken.html"><strong>Clients</strong></a></li>
+            <!-- <li><a class="white-text" href="index.html#Reviews"><strong>Reviews</strong></a></li> -->
+            <li><a class="btn orange darken-4 white-text" href="">LOGIN</a></li>
+        </ul>
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img class="responsive-img" src="img/winter_soup.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <h5 class="center orange-text text-darken-4">Add a New Recipe</h5>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m2 l2"></div>
+                <div class="col s12 m6 l6 input-field">
+                    <label for="name">Recipe Name</label>
+                    <input type="text">
+                </div>
+                <div class="col s12 m2 l2 input field">
+                    <label for="">Recipe Type</label>
+                    <select name="" id="">
+                        <option value="">Cake</option>
+                        <option value="">Soup</option>
+                        <option value="">Chicken</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m2 l2"></div>
+                <div class="col 12 m8 l8 input-field">
+                    <label for="name">Description</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m2 l2"></div>
+                <div class="col s12 m6 l6 input-field">
+                    <label for="name">Ingredients</label>
+                    <input type="text">
+                </div>
+                <div class="col s12 m2 l2 input-field">
+                    <label for="duration">Duration</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="input-field center">
+                <button class="btn-large btn-flat white-text orange darken-4">SUBMIT</button>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+    </footer>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/materialize.js"></script>
+<script>
+    $('.document').ready(function(){
+        $('.slider').slider({indicators: false});
+        $('select').formSelect();
+    })
+</script>
+</html>
